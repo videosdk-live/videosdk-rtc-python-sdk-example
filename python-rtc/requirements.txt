@@ -1,0 +1,3 @@
+videosdk=0.0.2
+python-dotenv=1.0.1
+asyncio=3.4.3
