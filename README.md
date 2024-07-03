@@ -29,7 +29,7 @@ The repository is organized as follows:
 
 - **python-rtc**: Basic Python RTC to join VideoSDK Meeting.
 
-- **transform-audio**: Contains [scripts](./transform-audio/) for audio transformation. _coming soon_
+- **transform-audio**: audio transformation. _coming soon_
 
 - **transform-video**: Contains [scripts](./transform-video/) for video transformation.
 
@@ -37,34 +37,41 @@ The repository is organized as follows:
 
 ## Getting Started
 
-To get started with the Video SDK, follow these steps:
+To get started with the Video SDK Face Detection, follow these steps:
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/VideoSDK-RTC-Python-SDK-Example.git
-   cd VideoSDK-RTC-Python-SDK-Example
+   git clone https://github.com/yourusername/videosdk-rtc-python-sdk-example.git
+   cd videosdk-rtc-python-sdk-example
    ```
 
 2. **Install dependencies:**
 
    ```bash
-   pip install videosdk python-dotenv
+   cd face-detection-and-landmarks
    ```
 
-3. **Set up environment variables:**
+3. **Install dependencies:**
 
-   - Copy the example environment file:
-     ```bash
-     cp .env.example .env
-     ```
-   - Update `.env` with your credentials and configurations.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-4. **Run a sample script:**
-   - For example, to run the face detection script:
-     ```bash
-     python face-detection-and-landmarks/face_detection.py
-     ```
+4. **Set up environment variables:**
+
+- Copy the example environment file:
+  ```bash
+  cp .env.example .env
+  ```
+- Update `.env` with your credentials and configurations.
+
+5. **Run a sample script:**
+
+- For example, to run the face detection script:
+  ```bash
+  python face_detection.py
+  ```
 
 ## Community
 
