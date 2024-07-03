@@ -1,4 +1,4 @@
 videosdk==0.0.2
-pillow==10.0.4
+pillow==10.4.0
 asyncio==3.4.3
 python-dotenv==1.0.1
