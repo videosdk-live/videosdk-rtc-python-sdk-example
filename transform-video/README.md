@@ -1,6 +1,6 @@
 # Video SDK for Python - Transform Video
 
-[![Documentation](https://img.shields.io/badge/Read-Documentation-blue)](https://docs.videosdk.live/python/guide/video-and-audio-calling/ai-and-ml/face-detection)
+[![Documentation](https://img.shields.io/badge/Read-Documentation-blue)](https://docs.videosdk.live/python/guide/video-and-audio-calling/ai-and-ml/transform-video)
 [![Discord](https://img.shields.io/discord/876774498798551130?label=Join%20on%20Discord)](https://discord.gg/kgAvyxtTxv)
 [![Register](https://img.shields.io/badge/Contact-Know%20More-blue)](https://app.videosdk.live/signup)
 
@@ -25,13 +25,7 @@ This repository provides an example of transforming video frames into a cartoon-
 - Install necessary libraries
 
 ```bash
-pip install videosdk opencv-python av
-```
-
-- if you are using face-blur using mediapipe example add this module.
-
-```bash
-pip install mediapipe
+pip install -r requirements.txt
 ```
 
 ## Setup Guide
@@ -65,7 +59,7 @@ NAME="YOUR_NAME"
 Execute the script to start transforming video frames.
 
 ```bash
-python transform_video.py
+python cartoon.py
 ```
 
 ## Key Concepts

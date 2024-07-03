@@ -29,7 +29,7 @@ cp .env.example .env
 ### Step 2: install videosdk
 
 ```sh
-pip install videosdk python-dotenv
+pip install -r requirements.txt
 ```
 
 OR

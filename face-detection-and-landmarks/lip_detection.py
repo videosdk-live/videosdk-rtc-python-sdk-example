@@ -11,7 +11,6 @@ VIDEOSDK_TOKEN = os.getenv("VIDEOSDK_TOKEN")
 MEETING_ID = os.getenv("MEETING_ID")
 NAME = os.getenv("NAME")
 loop = asyncio.get_event_loop()
-task: asyncio.Task = None
 
 # Initialize Mediapipe face detection
 mp_face_mesh = mp.solutions.face_mesh
@@ -92,8 +91,7 @@ class MyMeetingEventHandler(MeetingEventHandler):
         super().__init__()
 
     def on_meeting_left(self, data):
-        if task is not None:
-            task.cancel()
+        print("on_meeting_left")
 
     def on_participant_joined(self, participant: Participant):
         participant.add_event_listener(
@@ -101,8 +99,7 @@ class MyMeetingEventHandler(MeetingEventHandler):
         )
 
     def on_participant_left(self, participant: Participant):
-        if task is not None:
-            task.cancel()
+        print("on_participant_left")
 
 
 class ParticipantEventHandler(ParticipantEventHandler):
@@ -111,13 +108,11 @@ class ParticipantEventHandler(ParticipantEventHandler):
         self.participant_id = participant_id
 
     def on_stream_enabled(self, stream: Stream):
-        global task
         if stream.kind == "video":
             process_video(track=stream.track)
 
     def on_stream_disabled(self, stream: Stream):
-        if task is not None:
-            task.cancel()
+        print("on_stream_disabled")
 
 
 def main():

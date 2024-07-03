@@ -1,5 +1,4 @@
 videosdk==0.0.2
+pillow==10.0.4
 python-dotenv==1.0.1
 asyncio==3.4.3
-mediapipe==0.10.14
-opencv-python==4.9.0.80
