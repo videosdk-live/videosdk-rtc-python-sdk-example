@@ -20,11 +20,6 @@ This repository provides an example of capturing images of participants in real-
 
 - Python 3.11 or later
 - Valid [Video SDK Account](https://app.videosdk.live/signup)
-- Install necessary libraries
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Setup Guide
 
@@ -33,10 +28,17 @@ pip install -r requirements.txt
 Clone the repository to your local environment.
 
 ```bash
-git clone https://github.com/videosdk-live/videosdk-python-participant-image-capture-example.git
+git clone https://github.com/videosdk-live/videosdk-rtc-python-sdk-example.git
+cd videosdk-rtc-python-sdk-example/capture-image
 ```
 
-### Step 2: Configure Environment Variables
+### Step 2: Install necessary libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 3: Configure Environment Variables
 
 Copy the `.env.example` file to `.env` and add your Video SDK token, meeting ID, and name.
 
@@ -52,7 +54,7 @@ MEETING_ID="YOUR_MEETING_ID"
 NAME="YOUR_NAME"
 ```
 
-### Step 3: Run the Example
+### Step 4: Run the Example
 
 Execute the script to start the participant image capture example.
 

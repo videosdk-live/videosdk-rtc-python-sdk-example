@@ -34,10 +34,17 @@ pip install -r requirements.txt
 Clone the repository to your local environment.
 
 ```bash
-git clone https://github.com/videosdk-live/videosdk-python-vision-ai-example.git
+git clone https://github.com/videosdk-live/videosdk-rtc-python-sdk-example.git
+cd videosdk-rtc-python-sdk-example/vision-ai
 ```
 
-### Step 2: Configure Environment Variables
+### Step 2: Install necessary libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 3: Configure Environment Variables
 
 Copy the `.env.example` file to `.env` and add your Video SDK token, meeting ID, name, and OpenAI API key.
 

@@ -42,14 +42,15 @@ To get started with the Video SDK Face Detection, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/videosdk-rtc-python-sdk-example.git
-   cd videosdk-rtc-python-sdk-example
+   git clone https://github.com/videosdk-live/videosdk-rtc-python-sdk-example.git
    ```
 
-2. **Install dependencies:**
+2. **Change Directory:**
+
+   Let's run a example that detects the face from the stream. change the directory to `face-detection-and-landmarks`.
 
    ```bash
-   cd face-detection-and-landmarks
+   cd videosdk-rtc-python-sdk-example/face-detection-and-landmarks
    ```
 
 3. **Install dependencies:**

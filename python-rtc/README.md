@@ -21,12 +21,11 @@ At Video SDK, we’re building tools to help companies create world-class collab
 ### Step 1: Clone the repository to your local environment.
 
 ```bash
-git clone https://github.com/videosdk-live/quickstart.git
-cd quickstart/python-rtc/
-cp .env.example .env
+git clone https://github.com/videosdk-live/videosdk-rtc-python-sdk-example.git
+cd videosdk-rtc-python-sdk-example/python-rtc
 ```
 
-### Step 2: install videosdk
+### Step 2: install requirements
 
 ```sh
 pip install -r requirements.txt
@@ -40,22 +39,33 @@ OR
 pip install -U videosdk
 ```
 
-`skip this step if you already have meetingId`
+### Step 3: Configure Environment Variables
+
+Copy the `.env.example` file to `.env` and add your Video SDK token, meeting ID, and name.
+
+```bash
+cp .env.example .env
+```
+
+Modify the `.env` file with your details:
+
+```env
+VIDEOSDK_TOKEN="YOUR_VIDEOSDK_TOKEN"
+MEETING_ID="YOUR_MEETING_ID"
+NAME="YOUR_NAME"
+```
 
 ### Step 4: Create Meeting
+
+skip to [step 5](#step-5-run-the-sample-app) if you already have meetingId
 
 ```sh
 python api.py
 ```
 
-### Step 5: change your token and meetingId in `.env`
+change `.env` file if required.
 
-```
-VIDEOSDK_TOKEN="<YOUR_TOKEN>"
-MEETING_ID="<YOUR_MEETING_ID>"
-```
-
-### Step 6: Run the sample app
+### Step 5: Run the sample app
 
 ```sh
 python main.py
